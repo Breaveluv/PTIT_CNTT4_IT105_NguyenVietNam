@@ -45,7 +45,7 @@ Triển khai ứng dụng lên môi trường sản xuất (App Store/Google Pla
 
 Bài 5:
 1. Giai đoạn Planning (Lập kế hoạch)
-🎯 Mục tiêu:
+ Mục tiêu:
 
 Xác định phạm vi dự án, mục tiêu chính, nguồn lực, rủi ro và lịch trình thực hiện.
 
@@ -138,12 +138,12 @@ E. Mô tả thứ tự tương tác giữa học viên và hệ thống khi nộ
 Bài 7:
 Tóm tắt 6 giai đoạn SDLC cho hệ thống đăng ký tiêm chủng online
 Giai đoạn	                    Mục tiêu	                                      Sản phẩm đầu ra	                                  UML sử dụng
-1️⃣ Planning	               Xác định mục tiêu & kế hoạch dự án	               Project Plan	                                       Không bắt buộc
-2️⃣ Requirement Analysis    Phân tích yêu cầu chức năng & nghiệp vụ	       Tài liệu SRS (Software Requirement Specification)   	Use Case Diagram
-3️⃣ System Design	         Thiết kế cấu trúc, cơ sở dữ liệu, luồng xử lý	   Tài liệu thiết kế hệ thống (SDD)	                     Class Diagram, Sequence Diagram
-4️⃣ Implementation 	   Viết code và phát triển phần mềm     	           Sản phẩm chạy được	                                 Không bắt buộc
-5️⃣ Testing	                Kiểm thử đảm bảo chất lượng	                       Báo cáo kiểm thử, lỗi	                            Không bắt buộc
-6️⃣ Deployment & Maintenance	Đưa vào hoạt động, theo dõi, bảo trì	         Hệ thống chính thức	                              Không bắt buộc
+1️ Planning	               Xác định mục tiêu & kế hoạch dự án	               Project Plan	                                       Không bắt buộc
+2️ Requirement Analysis    Phân tích yêu cầu chức năng & nghiệp vụ	       Tài liệu SRS (Software Requirement Specification)   	Use Case Diagram
+3️ System Design	         Thiết kế cấu trúc, cơ sở dữ liệu, luồng xử lý	   Tài liệu thiết kế hệ thống (SDD)	                     Class Diagram, Sequence Diagram
+4️ Implementation 	   Viết code và phát triển phần mềm     	           Sản phẩm chạy được	                                 Không bắt buộc
+5️ Testing	                Kiểm thử đảm bảo chất lượng	                       Báo cáo kiểm thử, lỗi	                            Không bắt buộc
+6️ Deployment & Maintenance	Đưa vào hoạt động, theo dõi, bảo trì	         Hệ thống chính thức	                              Không bắt buộc
 
 Bài 8:
 1. Xác định Tác nhân và Chức năng Chính
@@ -355,3 +355,4 @@ Audit trail cho mọi trạng thái đơn.
 Thiết kế chịu lỗi cho tracking (batch sync khi offline).
 
 Hệ thống scaling theo vùng/peak (autoscaling cho API + queue backpressure).
+
