@@ -1,0 +1,357 @@
+Bài 1:
+Giao dịch bán hàng:Hệ thống Xử lý Giao dịch (TPS)
+Phân tích xu hướng kinh doanh: Hệ thống Hỗ trợ Quyết định (DSS)
+Bảng tổng quan hiệu suất hàng tháng dành cho CEO:Hệ thống Thông tin Điều hành (EIS)
+Bài 2:
+1. Dự án A: Waterfall (Thác nước)Mô hình Waterfall là mô hình tuyến tính, tuần tự, trong đó mỗi giai đoạn phải hoàn thành trước khi chuyển sang giai đoạn tiếp theo (Yêu cầu $\to$ Thiết kế $\to$ Triển khai $\to$ Kiểm thử $\to$ Triển khai).Lý do: Đối với một hệ thống quản lý điểm tiêu chuẩn, các quy tắc tính điểm, báo cáo và luồng dữ liệu thường được xác định rõ ràng ngay từ đầu. Waterfall tận dụng tốt điều này để hoàn thiện tài liệu, giúp việc kiểm soát tiến độ dễ dàng hơn.
+2. Dự án B: Agile (Linh hoạt)Agile là một phương pháp lặp đi lặp lại và tăng dần, tập trung vào việc đáp ứng nhanh chóng với sự thay đổi thông qua sự hợp tác giữa các nhóm tự quản lý.Lý do: Ứng dụng di động (Mobile App) là một lĩnh vực đòi hỏi sự linh hoạt cao. Việc đặt lịch khám bệnh liên quan đến trải nghiệm người dùng (UX/UI) và tích hợp các bên thứ ba. Agile cho phép nhóm phát hành các bản cập nhật nhỏ, liên tục nhận phản hồi để tinh chỉnh giao diện và tính năng
+3. Dự án C: Spiral (Hình xoắn ốc)Mô hình Spiral là sự kết hợp giữa mô hình Waterfall và mô hình lặp (Iterative), đặt trọng tâm vào phân tích và quản lý rủi ro trong mỗi vòng lặp phát triển.Lý do: Hệ thống ngân hàng điện tử có yêu cầu bảo mật nghiêm ngặt và độ phức tạp về tích hợp với các hệ thống tài chính khác. Spiral là lựa chọn lý tưởng vì nó yêu cầu một giai đoạn phân tích và giảm thiểu rủi ro chính thức ở mỗi vòng lặp trước khi tiếp tục phát triển, đảm bảo các yêu cầu về bảo mật và tuân thủ được kiểm soát từ sớm và xuyên suốt dự án.
+ 
+Bài 3:
+														
+Con người
+Người dùng cuối (Khách hàng đặt món), Người vận hành (Tài xế/Shipper), Người cung cấp (Nhân viên nhà hàng/quán ăn), và Người quản lý (Đội ngũ vận hành/hỗ trợ kỹ thuật của nền tảng).														
+Dữ liệu	
+Bao gồm Dữ liệu giao dịch (thông tin đơn hàng, thanh toán, vị trí), Dữ liệu danh mục (menu, giá cả, thông tin nhà hàng, đánh giá), và Dữ liệu người dùng (tài khoản, lịch sử đặt hàng).														
+Quy trình
+Quy trình kinh doanh cốt lõi, ví dụ: 1. Đặt hàng (chọn món → xác nhận giỏ hàng → thanh toán), 2. Xử lý đơn hàng (Nhà hàng tiếp nhận → chuẩn bị), 3. Giao hàng (Tài xế nhận hàng → giao đến khách), và 4. Hỗ trợ khách hàng (giải quyết khiếu nại).														
+
+Phần mềm
+Phần mềm Ứng dụng (App dành cho Khách hàng, App dành cho Tài xế, Giao diện/App dành cho Nhà hàng) và Phần mềm Hệ thống (Hệ điều hành, Hệ quản trị cơ sở dữ liệu để lưu trữ menu và đơn hàng).
+														
+Phần cứng
+Thiết bị đầu cuối (Smartphone, Máy tính bảng, Máy tính cá nhân), Thiết bị mạng (Router, Switch), và Cơ sở hạ tầng máy chủ (Máy chủ web, Máy chủ ứng dụng, Máy chủ cơ sở dữ liệu) nơi ứng dụng được lưu trữ và vận hành.
+
+Bài 4:
+
+Đây là 6 giai đoạn của Chu trình Phát triển Hệ thống (SDLC - System Development Life Cycle) và mô tả công việc cần làm cho dự án "Ứng dụng điểm danh sinh viên":
+1. Planning (Lập kế hoạch)	
+Xác định mục tiêu và phạm vi dự án (ví dụ: điểm danh bằng QR code/vị trí GPS). Lập kế hoạch tài nguyên, thời gian và chi phí. Quyết định mô hình phát triển (ví dụ: Agile).
+
+2. Analysis (Phân tích)
+Thu thập yêu cầu chi tiết từ người dùng (giáo viên, sinh viên, phòng đào tạo): cách thức điểm danh, các loại báo cáo cần có, quy tắc tính chuyên cần. Xây dựng mô hình hóa yêu cầu (Use Case Diagram, User Stories).
+
+3. Design (Thiết kế)
+Thiết kế kiến trúc hệ thống (web/mobile, backend, database). Thiết kế cơ sở dữ liệu (cấu trúc bảng sinh viên, lớp học, lịch sử điểm danh). Thiết kế giao diện người dùng (UI/UX) cho ứng dụng di động của sinh viên và giao diện web của giáo viên.
+
+4. Implementation (Triển khai/Lập trình)
+Viết mã (code) ứng dụng dựa trên các bản thiết kế. Xây dựng các mô-đun chức năng: đăng nhập, quét mã/GPS, lưu dữ liệu điểm danh, tạo báo cáo. Tích hợp các thành phần front-end và back-end.
+
+5. Testing (Kiểm thử)
+Thực hiện kiểm thử đơn vị (Unit Test) cho các chức năng nhỏ (ví dụ: xác thực đăng nhập). Thực hiện kiểm thử tích hợp (Integration Test) giữa ứng dụng di động và cơ sở dữ liệu. Thực hiện kiểm thử hệ thống (System Test) và kiểm thử chấp nhận người dùng (UAT) với giáo viên và sinh viên thực tế.
+
+6. Deployment & Maintenance (Triển khai & Bảo trì)
+Triển khai ứng dụng lên môi trường sản xuất (App Store/Google Play, máy chủ). Đào tạo người dùng (giáo viên, sinh viên). Thực hiện bảo trì (sửa lỗi phát sinh), nâng cấp (bổ sung tính năng mới như thông báo vắng mặt) và quản lý vận hành hệ thống.
+
+Bài 5:
+1. Giai đoạn Planning (Lập kế hoạch)
+🎯 Mục tiêu:
+
+Xác định phạm vi dự án, mục tiêu chính, nguồn lực, rủi ro và lịch trình thực hiện.
+
+ Các bước thực hiện:
+Nội dung	           Mô tả
+Mục tiêu hệ thống	Xây dựng hệ thống quản lý điểm danh sinh viên tự động bằng QR Code để giảm gian lận và tăng hiệu quả quản lý.
+Đối tượng sử dụng	- Giảng viên
+                        - Sinh viên
+                        - Phòng đào tạo
+
+Chức năng chính  	- Giảng viên tạo buổi học và sinh QR cho sinh viên quét.
+                        - Sinh viên dùng app quét QR để điểm danh.
+                        - Phòng đào tạo theo dõi, thống kê tình hình điểm danh.
+
+Nguồn lực	       3 developer (backend, frontend, mobile), 1 tester, 1 quản lý dự án
+
+Thời gian dự kiến	3 tháng (thiết kế – phát triển – kiểm thử – triển khai)
+
+Rủi ro	                - Sinh viên quét hộ điểm danh 
+                        - Kết nối mạng kém trong lớp học
+                        - Sai định danh QR hoặc trùng buổi học			
+ 2. Giai đoạn Requirement Analysis (Phân tích yêu cầu)
+ Mục tiêu:
+
+Hiểu rõ yêu cầu nghiệp vụ, chức năng và phi chức năng để chuẩn bị thiết kế hệ thống.
+
+ Các loại yêu cầu:
+ Yêu cầu chức năng (Functional Requirements):
+Mã	Mô tả
+FR1	Giảng viên đăng nhập và tạo buổi học (ngày, giờ, lớp, môn học).
+FR2	Hệ thống sinh mã QR duy nhất cho mỗi buổi học.
+FR3	Sinh viên đăng nhập, quét mã QR trong thời gian buổi học để điểm danh.
+FR4	Hệ thống ghi nhận thời gian, vị trí (GPS) khi điểm danh.
+FR5	Giảng viên xem danh sách sinh viên đã điểm danh.
+FR6	Phòng đào tạo xem báo cáo thống kê điểm danh theo lớp, môn học, giảng viên.
+ Yêu cầu phi chức năng (Non-Functional):
+
+Tốc độ phản hồi dưới 3 giây khi quét mã.
+
+Độ chính xác xác thực ≥ 99%.
+
+Bảo mật thông tin sinh viên (mã hóa dữ liệu điểm danh).
+
+Hỗ trợ trên cả web và mobile.
+
+UML tương ứng: Use Case Diagram
+
+Mô tả:
+
+Tác nhân: Giảng viên, Sinh viên, Phòng đào tạo
+
+Các ca sử dụng:
+
+“Tạo buổi học”, “Sinh mã QR”, “Quét mã điểm danh”, “Xem danh sách”, “Thống kê báo cáo”
+
+Sơ đồ Use Case UML (mô tả dạng text):
+
+Giảng viên ----> (Tạo buổi học)
+Giảng viên ----> (Sinh mã QR)
+Sinh viên ----> (Quét mã QR để điểm danh)
+Giảng viên ----> (Xem danh sách điểm danh)
+Phòng đào tạo ----> (Xem thống kê điểm danh)
+
+ 3. Giai đoạn System Design (Thiết kế hệ thống)
+ Mục tiêu:
+
+Biến các yêu cầu thành mô hình hệ thống có thể triển khai (kiến trúc, dữ liệu, luồng xử lý, giao diện).
+
+ Các bước chính:
+Nội dung	Mô tả
+Thiết kế kiến trúc tổng thể	Kiến trúc 3 lớp (Three-Tier): Presentation (UI), Application (API), Database
+Thiết kế CSDL	Bảng Users, Classes, Sessions, Attendance, QR_Codes
+Thiết kế luồng hoạt động	1. Giảng viên tạo buổi học → Hệ thống sinh mã QR
+2. Sinh viên quét mã QR → Gửi yêu cầu điểm danh lên server
+3. Server lưu thông tin và cập nhật thống kê
+Thiết kế giao diện	- Màn hình tạo buổi học (GV)
+- Màn hình quét QR (SV)
+- Màn hình thống kê (Phòng Đào Tạo)	
+
+
+Bài 6:
+Tình huống	                                                                      Sơ đồ UML phù hợp		
+A. Mô tả chức năng người dùng có thể thực hiện trên ứng dụng học tiếng Anh	Use Case Diagram (Sơ đồ Trường hợp Sử dụng)		
+B. Mô tả lớp NguoiDung, KhoaHoc, BaiHoc và quan hệ giữa chúng	                Class Diagram (Sơ đồ Lớp)		
+C. Mô tả luồng học viên bắt đầu → vào học → làm bài → hoàn thành	        Activity Diagram (Sơ đồ Hoạt động)		
+D. Mô tả cách hệ thống triển khai trên các máy chủ, thiết bị            	Deployment Diagram (Sơ đồ Triển khai)		
+E. Mô tả thứ tự tương tác giữa học viên và hệ thống khi nộp bài         	Sequence Diagram (Sơ đồ Trình tự)							
+
+
+Bài 7:
+Tóm tắt 6 giai đoạn SDLC cho hệ thống đăng ký tiêm chủng online
+Giai đoạn	                    Mục tiêu	                                      Sản phẩm đầu ra	                                  UML sử dụng
+1️⃣ Planning	               Xác định mục tiêu & kế hoạch dự án	               Project Plan	                                       Không bắt buộc
+2️⃣ Requirement Analysis    Phân tích yêu cầu chức năng & nghiệp vụ	       Tài liệu SRS (Software Requirement Specification)   	Use Case Diagram
+3️⃣ System Design	         Thiết kế cấu trúc, cơ sở dữ liệu, luồng xử lý	   Tài liệu thiết kế hệ thống (SDD)	                     Class Diagram, Sequence Diagram
+4️⃣ Implementation 	   Viết code và phát triển phần mềm     	           Sản phẩm chạy được	                                 Không bắt buộc
+5️⃣ Testing	                Kiểm thử đảm bảo chất lượng	                       Báo cáo kiểm thử, lỗi	                            Không bắt buộc
+6️⃣ Deployment & Maintenance	Đưa vào hoạt động, theo dõi, bảo trì	         Hệ thống chính thức	                              Không bắt buộc
+
+Bài 8:
+1. Xác định Tác nhân và Chức năng Chính
+Có 3 tác nhân (Actor) chính tương tác với hệ thống:
+Tác nhân (Actor)	Chức năng Tương ứng (Use Cases)										
+Học viên	        Đăng ký tài khoản, Đăng ký khóa học, Truy cập bài học (video, tài liệu), Làm bài tập, Xem điểm và tiến độ học tập, Gửi phản hồi.										
+Giảng viên	         Tạo/Sửa bài học và nội dung, Giao bài tập, Chấm điểm và đưa ra phản hồi, Quản lý danh sách lớp, Theo dõi tiến độ của học viên.										
+Admin (Quản trị viên)	Quản lý người dùng (thêm, sửa, xóa tài khoản Học viên/Giảng viên), Phân quyền truy cập, Xem báo cáo thống kê tổng quát (doanh thu, số lượng khóa học, hiệu suất giảng viên).										
+
+2. Phân loại Hệ thống Thông tin Phù hợp
+Hệ thống này tích hợp nhiều cấp độ chức năng, do đó cần kết hợp nhiều loại hệ thống:
+
+Hệ thống Xử lý Giao dịch (TPS - Transaction Processing System): Xử lý các giao dịch cơ bản hằng ngày như Đăng ký tài khoản, Đăng ký khóa học, Lưu trữ điểm số, Ghi nhận tiến độ học tập.
+
+Hệ thống Thông tin Quản lý (MIS - Management Information System): Cung cấp các báo cáo định kỳ cho Giảng viên và Admin, ví dụ: báo cáo điểm trung bình của một lớp, danh sách học viên chưa hoàn thành bài tập, báo cáo doanh thu khóa học hằng tháng.
+
+Hệ thống Hỗ trợ Quyết định (DSS - Decision Support System): Cung cấp các công cụ phân tích chuyên sâu cho Admin hoặc Ban lãnh đạo, ví dụ: phân tích xu hướng đăng ký khóa học theo mùa, phân tích hiệu quả của một phương pháp giảng dạy cụ thể để đưa ra quyết định cải tiến.
+
+3. Đề xuất Mô hình Phát triển Phần mềm
+Mô hình phù hợp nhất là Agile/Scrum.
+
+Lý do chọn Agile/Scrum:
+Tính Linh hoạt (Flexibility): Nền tảng học trực tuyến cần phản hồi nhanh với sự thay đổi của công nghệ giáo dục và nhu cầu của người dùng (Giảng viên, Học viên). Agile cho phép thay đổi yêu cầu dễ dàng qua các vòng lặp (Sprints).
+
+Phản hồi Người dùng Sớm (Early Feedback): Trung tâm có thể triển khai các tính năng cơ bản (MVP) sớm, thu thập phản hồi từ người dùng thực tế (Học viên/Giảng viên) về giao diện, trải nghiệm học tập, và điều chỉnh nhanh chóng.
+
+Tính Đa chức năng và Phức tạp (Complexity): Hệ thống có nhiều vai trò và nhiều chức năng khác nhau. Agile giúp chia dự án lớn thành các Sprint nhỏ, quản lý rủi ro và độ phức tạp một cách hiệu quả hơn so với Waterfall.
+
+4. Tên 3 Sơ đồ UML sử dụng trong Thiết kế
+Nếu đi sâu vào thiết kế hệ thống này, 3 sơ đồ UML quan trọng nhất tôi sẽ sử dụng là:
+
+Use Case Diagram (Sơ đồ Trường hợp Sử dụng): Dùng để xác định và trực quan hóa toàn bộ phạm vi chức năng của hệ thống từ góc độ 3 tác nhân (Học viên, Giảng viên, Admin).
+
+Class Diagram (Sơ đồ Lớp): Dùng để mô hình hóa cấu trúc dữ liệu cốt lõi, bao gồm các lớp như HocVien, KhoaHoc, BaiHoc, DiemSo và các mối quan hệ giữa chúng.
+
+Sequence Diagram (Sơ đồ Trình tự): Dùng để mô tả thứ tự tương tác chi tiết giữa các đối tượng (ví dụ: Ứng dụng Học viên, API Server, Database) khi thực hiện một chức năng cụ thể, như quá trình "Học viên nộp bài tập" hoặc "Giảng viên chấm điểm."
+
+Bài 9:
+
+1) Tác nhân (Actors) và chức năng chính của họ
+
+Actors chính
+
+Khách hàng (Customer) — người gửi / người nhận hàng
+
+Nhân viên vận chuyển (Driver / Courier) — giao hàng, cập nhật trạng thái tại hiện trường
+
+Nhân viên điều phối (Dispatcher / Operations) — xếp ca, phân tuyến, xử lý ngoại lệ
+
+Nhân viên kho (Warehouse Staff) — tiếp nhận, đóng gói, xuất kho
+
+Quản lý vùng / Quản lý vận hành (Region/Operations Manager) — theo dõi hiệu suất khu vực
+
+Kế toán / Billing — hóa đơn, thu phí, đối soát
+
+Chăm sóc khách hàng (Support) — xử lý khiếu nại, liên hệ khách
+
+CEO / Giám đốc (Executive) — xem dashboard tổng quan, KPI
+
+Admin / System Administrator — quản trị người dùng, cấu hình hệ thống
+
+Chức năng chính (theo actor)
+
+Khách hàng
+
+Tạo đơn hàng (pickup/dropoff, kích thước, trọng lượng, dịch vụ)
+
+Thanh toán / chọn phương thức thanh toán
+
+Theo dõi trạng thái (real-time tracking), nhận thông báo
+
+Hủy/ sửa đơn (theo chính sách)
+
+Đánh giá / phản hồi dịch vụ
+
+Nhân viên vận chuyển
+
+Nhận lệnh giao/nhận
+
+Cập nhật trạng thái: picked up, in-transit, delivered, failed, returned
+
+Chụp ảnh bằng chứng giao hàng / ghi chú lỗi
+
+Ghi vị trí GPS / thời gian thực
+
+Nhân viên điều phối
+
+Gán đơn cho tài xế / tối ưu lộ trình
+
+Xử lý ngoại lệ (không liên hệ được, hàng quá khổ, delay)
+
+Điều chỉnh lịch giao / tái lập tuyến
+
+Nhân viên kho
+
+Nhập kho / xuất kho / scan barcode
+
+Quản lý tồn, kiểm kê, trạng thái hàng (đang chờ, bảo quản)
+
+Quản lý / CEO
+
+Xem báo cáo KPIs: tỷ lệ giao đúng hạn, throughput, vùng tồn đọng, chi phí theo vùng
+
+So sánh hiệu suất theo thời gian / vùng / tài xế
+
+Ra quyết định chiến lược (mở thêm hub, thay đổi giá)
+
+Kế toán
+
+Lập hóa đơn, đối soát, xử lý hoàn tiền
+
+Support
+
+Tra cứu đơn, can thiệp thay đổi, xử lý khiếu nại
+
+2) Phân loại chức năng vào hệ thống thông tin (TPS, MIS, DSS, EIS)
+
+Ngắn gọn:
+
+TPS (Transaction Processing System): xử lý giao dịch hằng ngày, thu thập & lưu trữ dữ liệu.
+
+MIS (Management Information System): báo cáo tổng hợp cho quản lý trung cấp.
+
+DSS (Decision Support System): công cụ hỗ trợ ra quyết định (phân tích, mô phỏng, tối ưu).
+
+EIS (Executive Information System): dashboard cao cấp cho lãnh đạo (KPI, cái nhìn “one-page”).
+
+
+3) Chọn mô hình phát triển phần mềm phù hợp và giải thích
+
+Đề xuất: Agile (Scrum) kết hợp DevOps / CI-CD — lý do:
+
+Tính linh hoạt yêu cầu: Hệ thống logistics thường có yêu cầu thay đổi (tối ưu tuyến, tích hợp bên thứ 3 như SMS, thanh toán, hợp tác với bên vận chuyển), nên cần phát triển theo các sprint ngắn để điều chỉnh nhanh.
+
+Phát hành liên tục: Tính năng theo dõi real-time, sửa lỗi vận hành phải được cập nhật nhanh — DevOps + CI/CD giúp deploy an toàn, thường xuyên.
+
+Tương tác với người dùng thật: Cần feedback từ đội vận hành, tài xế, support — Scrum giúp demo thường xuyên cho stakeholders.
+
+Ưu tiên tính năng theo giá trị: Bắt đầu với core TPS (order entry, tracking), sau đó triển khai MIS/DSS/EIS dần (report, analytics, dashboard).
+
+Khả năng tích hợp: Agile cho phép chia nhỏ tích hợp với GPS provider, gateway thanh toán, hệ thống kho.
+
+Quy trình ngắn gọn:
+
+Sprint 0: Product backlog + thiết kế kiến trúc tối thiểu (MVP) — ưu tiên TPS core.
+
+Sprint 1..N: triển khai các tính năng user-facing (Order, Tracking, Driver app).
+
+Parallel: dựng pipeline CI/CD, automated tests, infra as code.
+
+Sau MVP: thêm MIS/DSS/EIS theo modules, chạy UAT với nhân viên vận hành.
+
+4) Đề xuất 4 sơ đồ UML sẽ sử dụng + mục đích ngắn
+
+Mình chọn 4 sơ đồ thiết yếu cho phân tích & thiết kế hệ thống logistics:
+
+1. Use Case Diagram — Mục đích:
+
+Mô tả actors và các ca sử dụng chính (tạo đơn, tracking, cập nhật trạng thái, xếp tuyến, báo cáo).
+
+Dùng cho thu thập yêu cầu, thảo luận với stakeholders để chắc mọi role & chức năng được nắm.
+
+Ví dụ nội dung: Customer → (Tạo đơn, Theo dõi), Driver → (Cập nhật trạng thái), Dispatcher → (Gán đơn, Xử lý ngoại lệ), CEO → (Xem dashboard).
+
+2. Class Diagram — Mục đích:
+
+Mô hình hóa cấu trúc dữ liệu / domain model (Order, Shipment, Customer, Driver, Vehicle, Route, Hub, Invoice, Event/Status).
+
+Dùng làm cơ sở thiết kế database và các entity trong backend.
+
+Ví dụ class chính:
+Order {orderId, sender, receiver, weight, serviceType, status}
+Shipment {shipmentId, orders[], assignedDriver, route, eta}
+
+3. Sequence Diagram (Order Lifecycle) — Mục đích:
+
+Mô tả luồng tương tác thời gian giữa hệ thống và actor khi một đơn được tạo → gán → giao → hoàn tất.
+
+Rất hữu ích để xác định API calls, messages, xử lý lỗi, transaction points, và nơi cần log/rollback.
+
+Các bước thể hiện: Customer submits order → System validates → Payment gateway → DB persist → Dispatcher receives → Assign driver → Driver updates status → System notifies customer.
+
+4. Activity Diagram (Delivery Workflow / Exception Handling) — Mục đích:
+
+Mô tả workflow chi tiết, bao gồm các luồng bình thường và luồng xảy ra ngoại lệ (không giao được, hàng hỏng, trả lại).
+
+Dùng để thiết kế UI flows, quy trình nghiệp vụ (SOP), và xác định nơi cần can thiệp thủ công (human-in-loop).
+
+Ví dụ luồng: Order ready → Out for delivery → If delivered → mark complete; else if recipient absent → retry or return → notify customer → escalate to dispatcher.
+
+5) Tiếp cận triển khai (gợi ý ngắn)
+
+MVP (phát hành lần đầu): Order entry, Driver app (cập nhật trạng thái + GPS), Customer tracking, Dispatcher basic UI. (Đặt TPS core trước)
+
+Phase 2: MIS reports, inventory/kho, billing integration.
+
+Phase 3: DSS (route optimization, forecasting), EIS dashboard (CEO) + alerting.
+
+Infra: microservices modular (order service, tracking service, routing service, reporting service), message queue cho events (Kafka/RabbitMQ), DB phân tách (OLTP cho TPS, data warehouse cho MIS/DSS).
+
+6) Những chú ý về bảo mật & hiệu năng
+
+Bảo vệ dữ liệu cá nhân (TLS, encryption at rest).
+
+Kiểm soát truy cập RBAC (role-based).
+
+Audit trail cho mọi trạng thái đơn.
+
+Thiết kế chịu lỗi cho tracking (batch sync khi offline).
+
+Hệ thống scaling theo vùng/peak (autoscaling cho API + queue backpressure).
